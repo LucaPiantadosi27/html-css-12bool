@@ -34,3 +34,19 @@
   background-color: lightskyblue;
 }
 
+
+/* ////////// */
+
+
+.row .row [class*="col-"]{
+  border: 1px solid white;
+  line-height: 200px;
+  text-align: center;
+  background-color: rgb(238, 120, 120);
+}
+
+.row .row{
+  padding: 5px;
+}
+
+--------------

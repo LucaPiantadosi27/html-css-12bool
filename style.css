@@ -49,4 +49,38 @@
   padding: 5px;
 }
 
---------------
+/* -------------- */
+
+/* NEST */
+
+/* contenitore nestato */
+.nesting-container {
+  width: 100%;
+}
+
+.nesting-container::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+[class*="col-"] {
+  height: 40px;
+  background: lightskyblue;
+  border: solid 1px black;
+  }
+
+
+.nesting-container {
+  padding: 1px;
+}
+
+.nesting-container .col-2,
+.nesting-container .col-8,
+.nesting-container .col-6 {
+  height: 75px;
+  background: rgb(35, 204, 12);
+  border: solid 1px white;
+  
+}
